@@ -16,8 +16,8 @@ export class mhaCBox extends Box {
     this.configurationVersion = stream.readUint8();
     if (this.configurationVersion !== 1) {
       Log.error(
-        "BoxParser",
-        "mhaC version " + this.configurationVersion + " not supported",
+        'BoxParser',
+        'mhaC version ' + this.configurationVersion + ' not supported',
         stream.isofile,
       );
       return;
